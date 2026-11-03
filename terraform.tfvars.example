@@ -1,0 +1,19 @@
+prefix           = "alz"
+environment      = "prod"
+primary_location = "eastus"
+hub_vnet_cidr    = ["10.100.0.0/16"]
+
+workload_spokes = {
+  "finance-core" = {
+    vnet_cidr     = ["10.101.0.0/16"]
+    app_subnet    = "10.101.1.0/24"
+    data_subnet   = "10.101.2.0/24"
+    enable_egress = true
+  }
+  "analytics-platform" = {
+    vnet_cidr     = ["10.102.0.0/16"]
+    app_subnet    = "10.102.1.0/24"
+    data_subnet   = "10.102.2.0/24"
+    enable_egress = true
+  }
+}

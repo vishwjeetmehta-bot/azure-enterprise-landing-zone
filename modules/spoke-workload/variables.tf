@@ -1,0 +1,12 @@
+variable "spoke_name" { type = string }
+variable "environment" { type = string }
+variable "prefix" { type = string }
+variable "location" { type = string }
+variable "vnet_cidr" { type = list(string) }
+variable "app_subnet_cidr" { type = string }
+variable "data_subnet_cidr" { type = string }
+variable "hub_vnet_name" { type = string }
+variable "hub_vnet_id" { type = string }
+variable "hub_rg_name" { type = string }
+variable "firewall_private_ip" { type = string }
+variable "tags" { type = map(string) }
