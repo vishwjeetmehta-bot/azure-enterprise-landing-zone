@@ -8,12 +8,12 @@ resource "azurerm_public_ip" "fw_pip" {
 }
 
 resource "azurerm_firewall_policy" "fw_policy" {
-  name                = "${var.firewall_name}-policy"
-  resource_group_name = var.resource_group_name
-  location            = var.location
-  sku                 = "Standard"
+  name                     = "${var.firewall_name}-policy"
+  resource_group_name      = var.resource_group_name
+  location                 = var.location
+  sku                      = "Standard"
   threat_intelligence_mode = "Alert"
-  tags                = var.tags
+  tags                     = var.tags
 }
 
 resource "azurerm_firewall" "hub_fw" {

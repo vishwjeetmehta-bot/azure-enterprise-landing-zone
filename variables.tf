@@ -68,10 +68,10 @@ variable "tags" {
   description = "Resource tags applied to all landing zone resources for governance and FinOps"
   type        = map(string)
   default = {
-    Owner          = "Cloud Architecture & DevOps"
-    Architect      = "Vishwjeet Kumar Mehta"
-    Framework      = "Microsoft Cloud Adoption Framework (CAF)"
-    SecurityTier   = "Enterprise Zero-Trust"
-    ProvisionedBy  = "Terraform"
+    Owner         = "Cloud Architecture & DevOps"
+    Architect     = "Vishwjeet Kumar Mehta"
+    Framework     = "Microsoft Cloud Adoption Framework (CAF)"
+    SecurityTier  = "Enterprise Zero-Trust"
+    ProvisionedBy = "Terraform"
   }
 }
